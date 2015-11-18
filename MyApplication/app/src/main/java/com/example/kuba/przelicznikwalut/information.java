@@ -7,9 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-/**
- * Created by Kuba on 16.11.2015.
- */
+
 
 public class information extends AppCompatActivity {
 
@@ -17,8 +15,6 @@ public class information extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wiadomosci);
-
-
     }
 
     @Override

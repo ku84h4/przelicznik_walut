@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Przelicznik walut</string>
     <string name="action_settings">Settings</string>
+    <string-array name="base">
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CAD</item>
+    </string-array>
+    <string-array name="second">
+        <item>PLN</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CAD</item>
+    </string-array>
 </resources>

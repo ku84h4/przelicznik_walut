@@ -6,13 +6,27 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
+
+    Spinner  spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main);
+
+        spinner = (Spinner) findViewById(R.id.base);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.base, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner = (Spinner) findViewById(R.id.second);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.second, android.R.layout.simple_spinner_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter2);
 
 
     }
@@ -49,5 +63,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent3);
         finish();
     }
+    public void exit (View v){
+        finish();
+        System.exit(0);
+    }
+
 
 }
